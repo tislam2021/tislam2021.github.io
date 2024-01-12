@@ -1,5 +1,159 @@
 <html>
 <title> Tausif's Website </title>
-<h1> Hello! </h1>
-<h2> My name is </h2>
+
+<head>
+    <style>
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 50px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+<h1> Hi, my name is Tausif Islam </h1>
+<h3> Welcome to my website! </h3>
+</head>
+<br>
+<body>
+<h4> Menu </h4>
+<div class="menu">
+    <div class="dropdown">
+    <a href="#">Course</a>
+  <div class="dropdown-content">
+    <a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php">Class Textbook</a>
+    <a href="http://w3schools.com">W3 Schools</a>
+    <a href="https://www.geeksforgeeks.org/web-development/ ">Geeks for Geeks</a>
+  </div>
+</div>
+  <div class="dropdown">
+      <br>
+      &nbsp
+      &nbsp
+    <a href="#">Browser</a>
+  <div class="dropdown-content">
+      <h4> Navigator </h4>
+      <p id="demo1"></p>
+        <script>
+            document.getElementById("demo1").innerHTML =
+                "App Name is " + navigator.appName;
+        </script>
+      <p id="demo2"></p>
+      <script>
+          document.getElementById("demo2").innerHTML =
+          "Product is " + navigator.product;
+      </script>
+      <p id="demo4"></p>
+      <script>
+        document.getElementById("demo4").innerHTML = "App Version is " + navigator.appVersion;
+      </script>
+      <p id="demo5"></p>
+      <script>
+        document.getElementById("demo5").innerHTML = "Agent is " + navigator.userAgent;
+      </script>
+      <p id="demo6"></p>
+        <script>
+        document.getElementById("demo6").innerHTML = "Platform is " + navigator.platform;
+        </script>
+      <p id="demo7"></p>
+        <script>
+        document.getElementById("demo7").innerHTML = "Language is " + navigator.language;
+        </script>
+      <h4>Window</h4>
+        <p id="demo3"></p>
+        <script>
+        document.getElementById("demo3").innerHTML =
+        "Browser inner window width: " + window.innerWidth + "px<br>" +
+        "Browser inner window height: " + window.innerHeight + "px";
+        </script>
+      <h4>Screen</h4>
+      <p id = "demo8"></p>
+      <p id = "demo9"></p>
+      <p id = "demo10"></p>
+      <p id = "demo11"></p>
+      <p id = "demo12"></p>
+      <p id = "demo13"></p>
+      <script>
+      document.getElementById("demo8").innerHTML =
+      "Screen Width: " + screen.width;
+      document.getElementById("demo9").innerHTML =
+      "Screen Height is: " + screen.height;
+      document.getElementById("demo10").innerHTML =
+      "Available Screen Width: " + screen.availWidth;
+      document.getElementById("demo11").innerHTML =
+      "Available Screen Height: " + screen.availHeight;
+      document.getElementById("demo12").innerHTML =
+      "Screen Color Depth: " + screen.colorDepth;
+      document.getElementById("demo13").innerHTML =
+      "Screen Pixel Depth: " + screen.pixelDepth;
+      </script>
+      <h4>Location</h4>
+      <p id = "demo14"></p>
+      <p id = "demo15"></p>
+      <p id = "demo16"></p>
+      <p id = "demo17"></p>
+      <script>
+      document.getElementById("demo14").innerHTML =
+      "Page location is " + window.location.href;
+      document.getElementById("demo15").innerHTML =
+      "Page hostname is " + window.location.hostname;
+      document.getElementById("demo16").innerHTML =
+      "Page path is " + window.location.pathname;
+      document.getElementById("demo17").innerHTML =
+      "Page protocol is " + window.location.protocol;
+      </script>
+      <h4>Geolocation</h4>
+      <p id = "demo18"></p>
+      <script>
+        const x = document.getElementById("demo18");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+  </div>
+</div>
+ <div class="dropdown">
+     <br>
+     &nbsp
+     &nbsp
+    <a href="#">About</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+</div>
+</body>
 </html>
