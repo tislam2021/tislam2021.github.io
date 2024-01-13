@@ -127,8 +127,10 @@
       </script>
       <h4>Geolocation</h4>
       <p id = "demo18"></p>
-      <script>
-        const x = document.getElementById("demo18");
+      <button onclick="getLocation()">Get Location</button>
+        <p id="demo"></p>
+        <script>
+        const x = document.getElementById("demo");
         function getLocation() {
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
