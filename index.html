@@ -1,56 +1,62 @@
 <html>
-<title> Tausif's Website </title>
-
 <head>
+    <title> Tausif's Website </title>
     <style>
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 50px 50px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-</style>
-<h1> Hi, my name is Tausif Islam </h1>
-<h3> Welcome to my website! </h3>
-</head>
+        body {
+            background-color: powderblue;
+            font-family: cursive;
+        }
+        .header {
+         text-align: left;
+         color: blue;
+            text-decoration: underline;
+         font-size: 30px;
+            width:max-content;
+        }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: lightpink;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 50px 50px;
+      text-decoration: none;
+      display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    </style>
+    <h1> Hi, my name is Tausif Islam </h1>
+    <h2> Welcome to my website! </h2>
+    </head>
 <br>
 <body>
-<h4> Menu </h4>
+<div class="header">
+   <h3> Menu </h3>
+</div>
 <div class="menu">
     <div class="dropdown">
     <a href="#">Course</a>
   <div class="dropdown-content">
-    <a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php">Class Textbook</a>
-    <a href="http://w3schools.com">W3 Schools</a>
-    <a href="https://www.geeksforgeeks.org/web-development/ ">Geeks for Geeks</a>
+    <a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php" target="_blank" >Class Textbook</a>
+    <a href="http://w3schools.com" target="_blank" >W3 Schools</a>
+    <a href="https://www.geeksforgeeks.org/web-development/" target="_blank" >Geeks for Geeks</a>
   </div>
 </div>
   <div class="dropdown">
-      <br>
       &nbsp
       &nbsp
     <a href="#">Browser</a>
@@ -145,7 +151,6 @@
   </div>
 </div>
  <div class="dropdown">
-     <br>
      &nbsp
      &nbsp
     <a href="#">About</a>
@@ -155,7 +160,7 @@
       <script>
       document.getElementById("demo20").innerHTML =
       "Hi my name is Tausif Islam and I am a computer science major at Queens College. I hope you enjoyed using my first website." +
-          "If you have any questions, feel free to email me in the contact section below.";
+          " If you have any questions, feel free to email me in the contact section below.";
       </script>
     <h2>Send me an email:</h2>
     <form action="mailto:tausif.islam915@gmail.com" method="post" enctype="text/plain">
